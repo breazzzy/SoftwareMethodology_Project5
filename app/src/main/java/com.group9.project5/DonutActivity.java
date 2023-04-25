@@ -10,12 +10,7 @@ import java.util.ArrayList;
 
 public class DonutActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.donut_view);
-    }
-   /* private ArrayList<Donut> donuts = new ArrayList<>();
+    private ArrayList<Donut> donuts = new ArrayList<>();
 
     private int[] flavorImages = {R.drawable.plain, R.drawable.blueberry, R.drawable.boston, R.drawable.chocolate, R.drawable.chocolatefrosting,
             R.drawable.vanillafrosting, R.drawable.strawberryfrosting, R.drawable.glazed, R.drawable.cruller, R.drawable.powedered, R.drawable.jelly, R.drawable.lemon};
@@ -36,6 +31,6 @@ public class DonutActivity extends AppCompatActivity {
         for (int i=0;i<donutNames.length; i++){
             donuts.add(new Donut(donutNames[i], flavorImages[i], 1.39));
         }
-    }*/
+    }
 
 }
