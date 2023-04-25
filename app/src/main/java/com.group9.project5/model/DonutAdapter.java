@@ -1,4 +1,4 @@
-package com.group9.project5;
+package com.group9.project5.model;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -16,7 +16,9 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.lang.reflect.Array;
+import com.group9.project5.R;
+import com.group9.project5.activities.DonutSelectedActivity;
+
 import java.util.ArrayList;
 
 public class DonutAdapter  extends RecyclerView.Adapter<DonutAdapter.DonutHolder> {

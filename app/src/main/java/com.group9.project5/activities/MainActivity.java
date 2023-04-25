@@ -1,14 +1,13 @@
-package com.group9.project5;
+package com.group9.project5.activities;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
+import com.group9.project5.R;
 
 public class MainActivity extends AppCompatActivity {
 
