@@ -11,7 +11,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/coffeeImage"
             android:layout_width="match_parent"
             android:layout_height="371dp"
             app:srcCompat="@drawable/coffee2" />
@@ -22,25 +22,25 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/sweetcream"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="CheckBox" />
+                android:text="Sweet Cream" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/frenchvanilla"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="CheckBox" />
+                android:text="French Vanilla" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/irishcream"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="CheckBox" />
+                android:text="Irish Cream" />
 
         </LinearLayout>
 
@@ -51,17 +51,17 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/caramel"
                 android:layout_width="132dp"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="Caramel" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/mocha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="CheckBox" />
+                android:text="Mocha" />
 
         </LinearLayout>
 
@@ -72,17 +72,24 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="287dp"
-            android:layout_height="35dp"
-            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="350px"/>
+            android:layout_marginTop="350px"
+            android:text="Subtotal:" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/button"
             android:layout_width="286dp"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Add to Order"
             android:layout_gravity="center"/>
 
     </LinearLayout>

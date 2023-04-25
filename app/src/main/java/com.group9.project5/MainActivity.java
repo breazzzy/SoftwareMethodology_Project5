@@ -27,13 +27,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         coffee = (ImageButton) findViewById(R.id.IBcoffee);
+        donut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCoffeeMenu(v);
+            }
+        });
         basket = (ImageButton)  findViewById(R.id.IBbasket);
+        basket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openBasket(v);
+            }
+        });
         orders = (ImageButton) findViewById(R.id.IBorders);
+        orders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openOrders(v);
+            }
+        });
     }
 
 
-    public void openDonutMenu(View view){
+     public void openDonutMenu(View view){
         Intent intent = new Intent(this, DonutActivity.class);
+        startActivity(intent);
+    }
+
+    public void openCoffeeMenu(View view){
+        Intent intent = new Intent(this, CoffeeActivity.class);
+        startActivity(intent);
+    }
+
+    public void openBasket(View view){
+        Intent intent = new Intent(this, BasketActivity.class);
+        startActivity(intent);
+    }
+
+    public void openOrders(View view){
+        Intent intent = new Intent(this, OrdersActivity.class);
         startActivity(intent);
     }
 }
