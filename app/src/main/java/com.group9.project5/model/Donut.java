@@ -1,13 +1,13 @@
-package com.group9.project5;
+package com.group9.project5.model;
 
 /**
  * Donut class for RecyclerView
  * @author William Barrese, Andy Nguyen
  */
-public class Donut {
+public class Donut{
     private String flavor;
     private int image;
-    private double unitPrice;
+    private double unitPrice = 1.79;
 
     public Donut(String flavor, int image, double unitPrice){
         this.flavor = flavor;

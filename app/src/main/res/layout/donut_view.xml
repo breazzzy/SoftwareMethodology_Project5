@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".DonutActivity">
+    tools:context=".activities.DonutActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:textSize="70px"/>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/donutImage"
             android:layout_width="203dp"
             android:layout_height="176dp"
             app:srcCompat="@drawable/donuts9" />
