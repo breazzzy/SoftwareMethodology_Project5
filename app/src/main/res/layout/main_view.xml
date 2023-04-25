@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,19 +19,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="68dp"
             android:layout_marginBottom="38dp"
-            android:text="Hello World" />
+            android:text="RU CAFE"
+            android:textSize="90px"/>
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/IBdonut"
             android:layout_width="121dp"
             android:layout_height="113dp"
             android:layout_marginBottom="25dp"
             android:contentDescription="Donut"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/donut" />
+            app:srcCompat="@drawable/donut"
+            android:onClick="openDonutMenu"/>
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/IBcoffee"
             android:layout_width="131dp"
             android:layout_height="103dp"
             android:layout_marginBottom="33dp"
@@ -39,7 +42,7 @@
             app:srcCompat="@drawable/coffee" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/IBbasket"
             android:layout_width="130dp"
             android:layout_height="128dp"
             android:layout_marginBottom="47dp"
@@ -48,7 +51,7 @@
             app:srcCompat="@drawable/shopping" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/IBorders"
             android:layout_width="138dp"
             android:layout_height="115dp"
             android:layout_marginBottom="120dp"

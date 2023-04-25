@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DonutActivity"></activity>
+        <activity android:name=".CoffeeActivity">
+        </activity>
+        <activity android:name=".BasketActivity">
+        </activity>
+        <activity android:name=".OrdersActivity">
+        </activity>
     </application>
 
 
