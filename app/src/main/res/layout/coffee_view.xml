@@ -74,13 +74,16 @@
             android:id="@+id/textView"
             android:layout_width="287dp"
             android:layout_height="35dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:layout_marginTop="350px"/>
 
         <Button
             android:id="@+id/button"
             android:layout_width="286dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Button"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

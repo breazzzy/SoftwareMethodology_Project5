@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Project5</string>
+
+    <string name="donuts">Donuts</string>
+    <string-array name="donutNames">
+        <item>Plain</item>
+        <item>Cruller</item>
+        <item>Glazed</item>
+        <item>Chocolate</item>
+        <item>Vanilla Frosting</item>
+        <item>Chocolate Frosting</item>
+        <item>Strawberry Frosting</item>
+        <item>Boston Creme</item>
+        <item>Jelly</item>
+        <item>Lemon</item>
+        <item>Powdered</item>
+        <item>Blueberry</item>
+    </string-array>
 </resources>
