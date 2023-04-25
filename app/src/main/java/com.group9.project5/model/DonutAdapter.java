@@ -55,8 +55,8 @@ public class DonutAdapter  extends RecyclerView.Adapter<DonutAdapter.DonutHolder
     @Override
     public void onBindViewHolder(@NonNull DonutHolder holder, int position) {
         //assign values for each row
-        holder.tv_name.setText(donuts.get(position).getFlavor());
-        holder.tv_price.setText((int) donuts.get(position).getUnitPrice());
+        holder.donutname.setText(donuts.get(position).getFlavor());
+        holder.donutprice.setText((int) donuts.get(position).getUnitPrice());
         holder.im_item.setImageResource(donuts.get(position).getImage());
     }
 
@@ -73,15 +73,15 @@ public class DonutAdapter  extends RecyclerView.Adapter<DonutAdapter.DonutHolder
      * Get the views from the row layout file, similar to the onCreate() method.
      */
     public static class DonutHolder extends RecyclerView.ViewHolder {
-        private TextView tv_name, tv_price;
+        private TextView donutname, donutprice;
         private ImageView im_item;
         private Button btn_add;
         private ConstraintLayout parentLayout; //this is the row layout
 
         public DonutHolder(@NonNull View itemView) {
             super(itemView);
-            tv_name = itemView.findViewById(R.id.tv_flavor);
-            tv_price = itemView.findViewById(R.id.tv_price);
+            donutname = itemView.findViewById(R.id.tv_flavor);
+            donutprice = itemView.findViewById(R.id.tv_price);
             im_item = itemView.findViewById(R.id.im_item);
             btn_add = itemView.findViewById(R.id.btn_add);
             parentLayout = itemView.findViewById(R.id.rowLayout);
@@ -94,16 +94,10 @@ public class DonutAdapter  extends RecyclerView.Adapter<DonutAdapter.DonutHolder
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(itemView.getContext(), DonutSelectedActivity.class);
-                    intent.putExtra("ITEM", tv_name.getText());
+                    intent.putExtra("DONUT", donutname.getText());
                     itemView.getContext().startActivity(intent);
                 }
             });
-            /* Alternatively, use a lamda expression to set the onClickListener for the row layout
-            parentLayout.setOnClickListener(view -> {
-                    Intent intent = new Intent(itemView.getContext(), ItemSelectedActivity.class);
-                    intent.putExtra("ITEM", tv_name.getText());
-                    itemView.getContext().startActivity(intent);
-                }); */
         }
 
         /**
@@ -117,18 +111,18 @@ public class DonutAdapter  extends RecyclerView.Adapter<DonutAdapter.DonutHolder
                 public void onClick(View view) {
                     AlertDialog.Builder alert = new AlertDialog.Builder(itemView.getContext());
                     alert.setTitle("Add to order");
-                    alert.setMessage(tv_name.getText().toString());
+                    alert.setMessage(donutname.getText().toString());
                     //handle the "YES" click
                     alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(itemView.getContext(),
-                                    tv_name.getText().toString() + " added.", Toast.LENGTH_LONG).show();
+                                    donutname.getText().toString() + " added.", Toast.LENGTH_LONG).show();
                         }
                         //handle the "NO" click
                     }).setNegativeButton("no", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(itemView.getContext(),
-                                    tv_name.getText().toString() + " not added.", Toast.LENGTH_LONG).show();
+                                    donutname.getText().toString() + " not added.", Toast.LENGTH_LONG).show();
                         }
                     });
                     AlertDialog dialog = alert.create();

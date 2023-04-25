@@ -33,7 +33,7 @@ public class DonutActivity extends AppCompatActivity {
     private void setupDonuts(){
         String [] donutNames = getResources().getStringArray(R.array.donutNames);
         for (int i=0;i<donutNames.length; i++){
-            donuts.add(new Donut(donutNames[i], flavorImages[i], 1.39));
+            donuts.add(new Donut(donutNames[i], flavorImages[i], 1.79));
         }
     }
 
