@@ -16,24 +16,21 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="100px"
-            android:layout_marginBottom="600px"
+            android:layout_marginBottom="300px"
             android:gravity="top"
             android:text="Your Order"
             android:textSize="70px" />
 
-        <TextView
-            android:id="@+id/textView5"
+        <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="500px"
-            android:text="(order)"
-            android:gravity="center"/>
+            android:layout_height="362dp" />
 
         <LinearLayout
             android:layout_width="176dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="25px">
 
             <TextView
                 android:id="@+id/textView6"
@@ -100,7 +97,7 @@
             android:layout_width="321dp"
             android:layout_height="56dp"
             android:layout_gravity="center|bottom"
-            android:layout_marginTop="100px"
+            android:layout_marginTop="25px"
             android:layout_marginBottom="100px"
             android:text="Button" />
     </LinearLayout>

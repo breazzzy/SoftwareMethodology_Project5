@@ -39,7 +39,8 @@
             android:layout_marginBottom="33dp"
             android:contentDescription="Coffee"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/coffee" />
+            app:srcCompat="@drawable/coffee"
+            android:onClick="openCoffeeMenu"/>
 
         <ImageButton
             android:id="@+id/IBbasket"
