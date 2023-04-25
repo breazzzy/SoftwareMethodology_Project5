@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.group9.project5.R;
 
+/**
+ * Main home screen with 4 menu navigation buttons
+ */
 public class MainActivity extends AppCompatActivity {
 
    private ImageButton donut, coffee, basket, orders;

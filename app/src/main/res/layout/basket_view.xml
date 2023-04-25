@@ -93,12 +93,12 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/placeOrderBTN"
             android:layout_width="321dp"
             android:layout_height="56dp"
             android:layout_gravity="center|bottom"
             android:layout_marginTop="25px"
             android:layout_marginBottom="100px"
-            android:text="Button" />
+            android:text="Place Order" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
