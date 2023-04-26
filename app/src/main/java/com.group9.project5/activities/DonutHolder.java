@@ -1,4 +1,4 @@
-package com.group9.project5;
+package com.group9.project5.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

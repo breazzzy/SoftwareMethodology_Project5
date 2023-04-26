@@ -1,4 +1,4 @@
-package com.group9.project5;
+package com.group9.project5.model;
 
 import java.util.HashMap;
 

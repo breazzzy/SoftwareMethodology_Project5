@@ -1,4 +1,4 @@
-package com.group9.project5;
+package com.group9.project5.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.group9.project5;
+package com.group9.project5.activities;
 
 import android.os.Bundle;
 import android.widget.ListView;

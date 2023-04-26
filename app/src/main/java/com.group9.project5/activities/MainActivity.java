@@ -1,4 +1,4 @@
-package com.group9.project5;
+package com.group9.project5.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.group9.project5.R;
 
 /**
  * Main home screen with 4 menu navigation buttons
