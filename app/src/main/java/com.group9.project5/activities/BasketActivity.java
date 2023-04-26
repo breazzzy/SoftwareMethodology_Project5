@@ -15,9 +15,6 @@ import com.group9.project5.model.MenuItem;
 import com.group9.project5.model.Order;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class BasketActivity extends AppCompatActivity {
     private ListView basketListView;
@@ -28,7 +25,7 @@ public class BasketActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.basket_view);
 
-        basketListView = (ListView) findViewById(R.id.basketListView);
+        basketListView = (ListView) findViewById(R.id.ordersListView);
         txtSubtotal = (TextView) findViewById(R.id.txtSubTotal);
         txtTax = (TextView) findViewById(R.id.txtTax);
         txtTotal = (TextView) findViewById(R.id.txtTotal);

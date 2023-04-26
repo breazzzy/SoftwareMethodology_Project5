@@ -22,7 +22,7 @@
             android:textSize="70px" />
 
         <ListView
-            android:id="@+id/basketListView"
+            android:id="@+id/ordersListView"
             android:layout_width="match_parent"
             android:layout_height="362dp" />
 

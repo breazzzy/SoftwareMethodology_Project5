@@ -84,7 +84,7 @@ public class Order {
                 this.menuItems) {
             sub += item.itemPrice();
         }
-        return sub * (1.0 + MenuItem.TAX);
+        return Math.round((sub * (1.0 + MenuItem.TAX)) * 100.0)/100.0;
     }
 
     /**
