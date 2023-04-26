@@ -23,16 +23,20 @@ public class DonutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.donut_view);
-        Log.d("Opened","Donut");
+        setContentView(R.layout.main_view);
 
-        RecyclerView rcview = findViewById(R.id.donutRCV);
-        //setupDonuts();
-        ArrayList<Donut> donuts = new ArrayList<>();
-        donuts.add(new Donut("Strawberry", R.drawable.strawberryfrosting, "1.79"));
+        RecyclerView recyclerView = findViewById(R.id.donutRCV);
 
-        rcview.setLayoutManager(new LinearLayoutManager(this));
-        rcview.setAdapter(new DonutAdapter(getApplicationContext(), donuts));
+        ArrayList<Donut> donuts = new ArrayList<Donut>();
+        donuts.add(new Donut("strawberry", R.drawable.strawberryfrosting, "1.79"));
+        donuts.add(new Donut("strawberry", R.drawable.strawberryfrosting, "1.79"));
+        donuts.add(new Donut("strawberry", R.drawable.strawberryfrosting, "1.79"));
+        donuts.add(new Donut("strawberry", R.drawable.strawberryfrosting, "1.79"));
+        donuts.add(new Donut("strawberry", R.drawable.strawberryfrosting, "1.79"));
+        donuts.add(new Donut("strawberry", R.drawable.strawberryfrosting, "1.79"));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new DonutAdapter(getApplicationContext(), donuts));
     }
 
    /* private void setupDonuts(){
