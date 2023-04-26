@@ -1,4 +1,4 @@
-package com.group9.project5.model;
+package com.group9.project5;
 
 import java.util.ArrayList;
 

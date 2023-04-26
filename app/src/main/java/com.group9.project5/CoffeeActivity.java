@@ -1,4 +1,4 @@
-package com.group9.project5.activities;
+package com.group9.project5;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -10,11 +10,6 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.group9.project5.R;
-import com.group9.project5.model.Coffee;
-import com.group9.project5.model.Order;
-
-import java.io.Console;
 import java.util.ArrayList;
 
 public class CoffeeActivity extends AppCompatActivity {

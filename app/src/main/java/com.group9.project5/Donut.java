@@ -1,4 +1,4 @@
-package com.group9.project5.model;
+package com.group9.project5;
 
 /**
  * Donut class for RecyclerView
