@@ -22,6 +22,7 @@
             android:textSize="70px" />
 
         <ListView
+            android:id="@+id/basketListView"
             android:layout_width="match_parent"
             android:layout_height="362dp" />
 
@@ -40,12 +41,11 @@
                 android:text="Subtotal" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/txtSubTotal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -62,12 +62,11 @@
                 android:text="Sales Tax" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/txtTax"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -84,12 +83,11 @@
                 android:text="Total" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/txtTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1" />
         </LinearLayout>
 
         <Button

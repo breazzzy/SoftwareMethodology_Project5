@@ -2,6 +2,7 @@ package com.group9.project5.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_view);
 
-       donut = (ImageButton) findViewById(R.id.IBdonut);
+        donut = (ImageButton) findViewById(R.id.IBdonut);
+        Log.d("Donut", "Donut");
         donut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         coffee = (ImageButton) findViewById(R.id.IBcoffee);
-        donut.setOnClickListener(new View.OnClickListener() {
+        coffee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCoffeeMenu(v);
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
      public void openDonutMenu(View view){
+         Log.d("openMenu","Donut");
         Intent intent = new Intent(this, DonutActivity.class);
         startActivity(intent);
     }

@@ -20,8 +20,9 @@
             android:layout_marginBottom="50dp"/>
 
         <ListView
+            android:id="@+id/basketListView"
             android:layout_width="match_parent"
-            android:layout_height="502dp" />
+            android:layout_height="554dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

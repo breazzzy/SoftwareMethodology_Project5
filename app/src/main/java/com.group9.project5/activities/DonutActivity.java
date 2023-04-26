@@ -1,6 +1,7 @@
 package com.group9.project5.activities;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,6 +24,8 @@ public class DonutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.donut_view);
+        Log.d("Opened","Donut");
+
         RecyclerView rcview = findViewById(R.id.donutView);
         setupDonuts();
         DonutAdapter adapter = new DonutAdapter(this, donuts);
