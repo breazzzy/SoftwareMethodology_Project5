@@ -1,6 +1,7 @@
 package com.group9.project5.model;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,14 +29,15 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
     @NonNull
     @Override
     public DonutHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new DonutHolder(LayoutInflater.from(context).inflate(R.layout.donut_view,parent,false));
+        return new DonutHolder(LayoutInflater.from(context).inflate(R.layout.donut_card,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DonutHolder holder, int position) {
-        holder.donutView.setText(donuts.get(position).getFlavor());
+    public void onBindViewHolder(final DonutHolder holder, final int position) {
         holder.imageView.setImageResource(donuts.get(position).getImage());
         holder.priceView.setText(donuts.get(position).getPrice());
+        holder.donutView.setText(donuts.get(position).getFlavor());
+
     }
 
     @Override
@@ -49,11 +51,11 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
         protected Button btn_add;
         protected ConstraintLayout parentLayout; //this is the row layout
 
-        public DonutHolder(@NonNull View itemView) {
+        public DonutHolder(View itemView) {
             super(itemView);
-            donutView = itemView.findViewById(R.id.flavorView);
-            priceView = itemView.findViewById(R.id.priceView);
-            imageView = itemView.findViewById(R.id.imageView);
+            donutView = (TextView) itemView.findViewById(R.id.donutFlavor);
+            priceView = (TextView) itemView.findViewById(R.id.donutPrice);
+            imageView = (ImageView) itemView.findViewById(R.id.donutImage);
             /*btn_add = itemView.findViewById(R.id.btn_add);
             setAddButtonOnClick(itemView); //register the onClicklistener for the button on each row.
 
