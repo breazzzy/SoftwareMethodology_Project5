@@ -28,7 +28,7 @@
             app:srcCompat="@drawable/donuts9" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/donutView"
+            android:id="@+id/donutRCV"
             android:layout_width="match_parent"
             android:layout_height="347dp" />
 

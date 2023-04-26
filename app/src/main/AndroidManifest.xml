@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.DonutActivity"></activity>
+        <activity android:name=".activities.DonutSelectedActivity"></activity>
         <activity android:name=".activities.CoffeeActivity">
         </activity>
         <activity android:name=".activities.BasketActivity">

@@ -2,7 +2,7 @@
     <string name="app_name">Project5</string>
 
     <string name="donuts">Donuts</string>
-    <string-array name="donutNames">
+    <string-array name="flavorNames">
         <item>Plain</item>
         <item>Cruller</item>
         <item>Glazed</item>

@@ -28,7 +28,7 @@ public class CoffeeActivity extends AppCompatActivity {
         setContentView(R.layout.coffee_view);
         Log.d("Opened","Coffee");
 
-        //populate spinner/combobox
+        //populate spinner
         Integer [] quantityArray = new Integer[]{1,2,3,4};
         coffeequantity = (Spinner) findViewById(R.id.coffeequantity);
         ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this,
