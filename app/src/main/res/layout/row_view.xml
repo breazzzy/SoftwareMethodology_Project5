@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/flavor"
+        android:id="@+id/flavorView"
         android:layout_toEndOf="@id/imageview"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -22,9 +22,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/price"
+        android:id="@+id/priceView"
         android:layout_toEndOf="@id/imageview"
-        android:layout_below="@id/flavor"
+        android:layout_below="@id/flavorView"
         android:textColor="@color/black"
         android:textSize="20dp"
         tools:text="price"/>

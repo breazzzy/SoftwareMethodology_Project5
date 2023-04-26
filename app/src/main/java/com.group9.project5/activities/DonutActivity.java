@@ -23,7 +23,7 @@ public class DonutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_view);
+        setContentView(R.layout.donut_view);
 
         RecyclerView recyclerView = findViewById(R.id.donutRCV);
 

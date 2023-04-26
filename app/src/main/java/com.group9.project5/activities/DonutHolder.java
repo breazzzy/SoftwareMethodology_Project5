@@ -23,8 +23,8 @@ public class DonutHolder extends RecyclerView.ViewHolder{
 
         public DonutHolder(@NonNull View itemView) {
             super(itemView);
-            donutView = itemView.findViewById(R.id.flavor);
-            priceView = itemView.findViewById(R.id.price);
+            donutView = itemView.findViewById(R.id.flavorView);
+            priceView = itemView.findViewById(R.id.priceView);
             imageView = itemView.findViewById(R.id.imageView);
             /*btn_add = itemView.findViewById(R.id.btn_add);
             setAddButtonOnClick(itemView); //register the onClicklistener for the button on each row.
