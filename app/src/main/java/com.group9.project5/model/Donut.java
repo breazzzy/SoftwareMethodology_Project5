@@ -32,7 +32,7 @@ public class Donut extends MenuItem{
     @Override
     public double itemPrice() {
         double price = MenuItem.DONUT_MAP.get(type.toLowerCase());
-        return price * quantity;
+        return Math.round((price * quantity) * 100.0)/100.0;
     }
 
     /**

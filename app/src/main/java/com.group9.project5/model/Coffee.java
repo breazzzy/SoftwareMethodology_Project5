@@ -31,7 +31,7 @@ public class Coffee extends MenuItem{
     @Override
     public double itemPrice() {
         double price = SIZE_MAP.get(this.cupSize.toLowerCase()) + (this.addOns.size() * ADDON_PRICE);
-        return price * this.quantity;
+        return Math.round((price * this.quantity) * 100.0)/100.0;
     }
 
     /**

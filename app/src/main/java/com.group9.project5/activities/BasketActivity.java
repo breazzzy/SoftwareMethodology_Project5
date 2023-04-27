@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -52,6 +53,7 @@ public class BasketActivity extends AppCompatActivity {
 
         basketListView.setAdapter(basket);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        Context temp = this;
         placeOrderBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +67,8 @@ public class BasketActivity extends AppCompatActivity {
                 Order.getCurrentOrder().FinalizeOrder();
                 basket.notifyDataSetChanged();
                 loadTotals();
+                Toast toast = Toast.makeText(temp, "Order Finalized", Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
 
@@ -119,7 +123,7 @@ public class BasketActivity extends AppCompatActivity {
             TextView orderText = (TextView) convertView.findViewById(R.id.orderText);
             Button removeBtn = (Button) convertView.findViewById(R.id.removeButtonView);
 
-            orderText.setText(Order.getCurrentOrder().getMenuItems().get(position).toString() + "\t\t\t$" + Order.getCurrentOrder().getTotal());
+            orderText.setText(Order.getCurrentOrder().getMenuItems().get(position).toString() + "\t\t\t$" + Order.getCurrentOrder().getMenuItems().get(position).itemPrice());
             removeBtn.setText("Remove");
 
             removeBtn.setOnClickListener(new View.OnClickListener() {
@@ -128,6 +132,8 @@ public class BasketActivity extends AppCompatActivity {
                     Order.getCurrentOrder().remove(Order.getCurrentOrder().getMenuItems().get(position));
                     notifyDataSetChanged();
                     ((BasketActivity) context).loadTotals();
+                    Toast toast = Toast.makeText(context,R.string.toast_item_removed_basket, Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             });
 
