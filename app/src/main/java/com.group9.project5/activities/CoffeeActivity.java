@@ -37,7 +37,7 @@ public class CoffeeActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         coffeequantity.setAdapter(adapter);
 
-        String [] sizeArray = new String[]{"Short","Tall","Grande","Venti" };
+        String [] sizeArray = getResources().getStringArray(R.array.sizeArray);
         cupSize = (Spinner) findViewById(R.id.cupSize);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, sizeArray);
@@ -77,7 +77,7 @@ public class CoffeeActivity extends AppCompatActivity {
                         addons,
                         Integer.parseInt(coffeequantity.getSelectedItem().toString())
                 );
-               Toast.makeText(getApplicationContext(), "Coffee has been added to the basket!", Toast.LENGTH_LONG).show();
+               Toast.makeText(getApplicationContext(), R.string.coffee_added, Toast.LENGTH_LONG).show();
                 Order.getCurrentOrder().add(coffee);
             }
         });
