@@ -1,5 +1,6 @@
 package com.group9.project5.activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +20,6 @@ import java.io.Console;
 import java.util.ArrayList;
 
 public class CoffeeActivity extends AppCompatActivity {
-
     private Button addToOrderBTN;
     private CheckBox sweetcream, frenchvanilla, irishcream, caramel, mocha;
     private Spinner coffeequantity, cupSize;
@@ -76,6 +77,7 @@ public class CoffeeActivity extends AppCompatActivity {
                         addons,
                         Integer.parseInt(coffeequantity.getSelectedItem().toString())
                 );
+               Toast.makeText(getApplicationContext(), "Coffee has been added to the basket!", Toast.LENGTH_LONG).show();
                 Order.getCurrentOrder().add(coffee);
             }
         });
