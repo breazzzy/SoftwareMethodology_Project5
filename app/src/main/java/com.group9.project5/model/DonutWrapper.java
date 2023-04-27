@@ -1,9 +1,5 @@
 package com.group9.project5.model;
 
-/**
- * Donut class for RecyclerView
- * @author William Barrese, Andy Nguyen
- */
 public class DonutWrapper {
     private String flavor;
     private int image;

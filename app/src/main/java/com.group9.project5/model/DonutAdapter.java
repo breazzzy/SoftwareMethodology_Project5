@@ -17,7 +17,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.group9.project5.R;
-import com.group9.project5.model.DonutWrapper;
 
 import java.util.ArrayList;
 
