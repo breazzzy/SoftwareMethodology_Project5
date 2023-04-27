@@ -5,6 +5,18 @@ import java.util.HashMap;
 public abstract class MenuItem {
 
     /**
+     *Price for yeast donut.
+     */
+    public final static double YEAST_PRICE = 1.59;
+    /**
+     *Price for cake donut.
+     */
+    public final static double CAKE_PRICE = 1.79;
+    /**
+     *Price for donut hole.
+     */
+    public final static double HOLE_PRICE = 0.39;
+    /**
      *Price for short coffee.
      */
     public final static double SHORT_PRICE = 1.89;
@@ -37,6 +49,16 @@ public abstract class MenuItem {
         SIZE_MAP.put("tall", TALL_PRICE);
         SIZE_MAP.put("grande", GRANDE_PRICE);
         SIZE_MAP.put("venti", VENTI_PRICE);
+    }
+
+    /**
+     * HashMap holds donut types and price.
+     */
+    public static final HashMap<String, Double> DONUT_MAP = new HashMap<>();
+    static {
+        DONUT_MAP.put("yeast donut", YEAST_PRICE);
+        DONUT_MAP.put("cake donut", CAKE_PRICE);
+        DONUT_MAP.put("donut hole", HOLE_PRICE);
     }
 
     /**

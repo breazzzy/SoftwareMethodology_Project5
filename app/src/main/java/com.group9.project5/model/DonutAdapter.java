@@ -3,7 +3,6 @@ package com.group9.project5.model;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,16 +17,16 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.group9.project5.R;
-import com.group9.project5.activities.DonutSelectedActivity;
+import com.group9.project5.model.DonutWrapper;
 
 import java.util.ArrayList;
 
 public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder> {
     Context context;
-    ArrayList<Donut> donuts;
-    public DonutAdapter(Context context, ArrayList<Donut> donuts) {
+    ArrayList<DonutWrapper> donutWrappers;
+    public DonutAdapter(Context context, ArrayList<DonutWrapper> donutWrappers) {
         this.context = context;
-        this.donuts = donuts;
+        this.donutWrappers = donutWrappers;
     }
 
 
@@ -39,15 +38,15 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
 
     @Override
     public void onBindViewHolder(final DonutHolder holder, final int position) {
-        holder.imageView.setImageResource(donuts.get(position).getImage());
-        holder.priceView.setText(donuts.get(position).getPrice());
-        holder.donutView.setText(donuts.get(position).getFlavor());
+        holder.imageView.setImageResource(donutWrappers.get(position).getImage());
+        holder.priceView.setText(donutWrappers.get(position).getPrice());
+        holder.donutView.setText(donutWrappers.get(position).getFlavor());
 
     }
 
     @Override
     public int getItemCount() {
-        return donuts.size();
+        return donutWrappers.size();
     }
 
     public class DonutHolder extends RecyclerView.ViewHolder{
@@ -83,7 +82,8 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
          * @param itemView
          */
         private void setAddButtonOnClick(@NonNull View itemView) {
-            btn_add.setOnClickListener(new View.OnClickListener() {
+            Log.d("Button add", itemView.findViewById(R.id.btn_add).toString());
+            itemView.findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     AlertDialog.Builder alert = new AlertDialog.Builder(itemView.getContext());
@@ -94,6 +94,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(itemView.getContext(),
                                     donutView.getText().toString() + " added.", Toast.LENGTH_LONG).show();
+//                            Order.getCurrentOrder().add(new Donut(donutView.getText(), ));
                         }
                         //handle the "NO" click
                     }).setNegativeButton("no", new DialogInterface.OnClickListener() {
