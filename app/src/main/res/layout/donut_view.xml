@@ -17,7 +17,7 @@
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Donut Menu"
+            android:text="@string/donutmenu"
             android:textAlignment="center"
             android:textSize="70px"/>
 

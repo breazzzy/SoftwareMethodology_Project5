@@ -42,15 +42,14 @@
             android:id="@+id/subtotalLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Subtotal:"
+            android:text="@string/subtotal"
             android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/donutSubtotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="TextView" />
+            android:layout_gravity="center"/>
 
         <Button
             android:id="@+id/addbtn"

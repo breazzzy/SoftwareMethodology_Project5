@@ -13,7 +13,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Store Orders"
+            android:text="@string/storeorders"
             android:gravity="center"
             android:textSize="70px"
             android:layout_marginTop="50dp"

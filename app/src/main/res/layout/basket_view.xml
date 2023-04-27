@@ -18,7 +18,7 @@
             android:layout_marginTop="100px"
             android:layout_marginBottom="300px"
             android:gravity="top"
-            android:text="Your Order"
+            android:text="@string/basket"
             android:textSize="70px" />
 
         <ListView
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Subtotal" />
+                android:text="@string/subtotal" />
 
             <TextView
                 android:id="@+id/txtSubTotal"
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Sales Tax" />
+                android:text="@string/tax" />
 
             <TextView
                 android:id="@+id/txtTax"
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Total" />
+                android:text="@string/total" />
 
             <TextView
                 android:id="@+id/txtTotal"
