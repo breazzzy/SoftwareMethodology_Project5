@@ -11,6 +11,10 @@ public class DonutWrapper {
         this.type = type;
     }
 
+    public String getType() {
+        return type;
+    }
+
     public String getFlavor(){return flavor;}
 
     public int getImage(){return image;}

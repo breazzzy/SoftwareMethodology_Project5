@@ -36,18 +36,18 @@ public class DonutActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.donutRCV);
 
         ArrayList<DonutWrapper> donutWrappers = new ArrayList<DonutWrapper>();
-        donutWrappers.add(new DonutWrapper("Plain", R.drawable.plain, "1.79"));
-        donutWrappers.add(new DonutWrapper("Blueberry", R.drawable.blueberry, "1.79"));
-        donutWrappers.add(new DonutWrapper("Boston Creme", R.drawable.boston, "1.79"));
-        donutWrappers.add(new DonutWrapper("Chocolate", R.drawable.chocolate, "1.79"));
-        donutWrappers.add(new DonutWrapper("Chocolate Icing", R.drawable.chocolatefrosting, "1.79"));
-        donutWrappers.add(new DonutWrapper("Vanilla Icing", R.drawable.vanillafrosting, "1.79"));
-        donutWrappers.add(new DonutWrapper("Strawberry Icing", R.drawable.strawberryfrosting, "1.79"));
-        donutWrappers.add(new DonutWrapper("Glazed", R.drawable.glazed, "1.79"));
-        donutWrappers.add(new DonutWrapper("Cruller", R.drawable.cruller, "1.79"));
-        donutWrappers.add(new DonutWrapper("Powdered", R.drawable.powedered, "1.79"));
-        donutWrappers.add(new DonutWrapper("Jelly", R.drawable.jelly, "1.79"));
-        donutWrappers.add(new DonutWrapper("Lemon", R.drawable.lemon, "1.79"));
+        donutWrappers.add(new DonutWrapper("Yeast Plain", R.drawable.plain, "Yeast"));
+        donutWrappers.add(new DonutWrapper("Yeast Blueberry", R.drawable.blueberry, "Yeast"));
+        donutWrappers.add(new DonutWrapper("Yeast Boston Creme", R.drawable.boston, "Yeast"));
+        donutWrappers.add(new DonutWrapper("Yeast Chocolate", R.drawable.chocolate, "Yeast"));
+        donutWrappers.add(new DonutWrapper("Cake Chocolate Icing", R.drawable.chocolatefrosting, "Cake"));
+        donutWrappers.add(new DonutWrapper("Cake Vanilla Icing", R.drawable.vanillafrosting, "Cake"));
+        donutWrappers.add(new DonutWrapper("Cake Strawberry Icing", R.drawable.strawberryfrosting, "Cake"));
+        donutWrappers.add(new DonutWrapper("Cake Glazed", R.drawable.glazed, "Cake"));
+        donutWrappers.add(new DonutWrapper("Cake Cruller", R.drawable.cruller, "Cake"));
+        donutWrappers.add(new DonutWrapper("Powdered Donut Hole", R.drawable.powedered, "Donut Hole"));
+        donutWrappers.add(new DonutWrapper("Jelly Donut Hole", R.drawable.jelly, "Donut Hole"));
+        donutWrappers.add(new DonutWrapper("Lemon Donut Hole", R.drawable.lemon, "Donut Hole"));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new DonutAdapter(this, donutWrappers));
