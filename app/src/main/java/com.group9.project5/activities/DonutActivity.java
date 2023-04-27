@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class DonutActivity extends AppCompatActivity {
 
-    Spinner donutQuantity;
+    public Spinner donutQuantity;
 
     /*private int[] flavorImages = {R.drawable.plain, R.drawable.blueberry, R.drawable.boston, R.drawable.chocolate, R.drawable.chocolatefrosting,
             R.drawable.vanillafrosting, R.drawable.strawberryfrosting, R.drawable.glazed, R.drawable.cruller, R.drawable.powedered, R.drawable.jelly, R.drawable.lemon};*/
@@ -26,21 +26,21 @@ public class DonutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.donut_view);
 
-        Integer [] quantityArray = new Integer[]{1,2,3,4,5,6,7,8,9,10,11,12};
+        /*Integer [] quantityArray = new Integer[]{1,2,3,4,5,6,7,8,9,10,11,12};
         donutQuantity = (Spinner) findViewById(R.id.donutquantity);
         ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this,
                 android.R.layout.simple_spinner_item, quantityArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        donutQuantity.setAdapter(adapter);
+        donutQuantity.setAdapter(adapter);*/
 
         RecyclerView recyclerView = findViewById(R.id.donutRCV);
 
         ArrayList<DonutWrapper> donutWrappers = new ArrayList<DonutWrapper>();
         donutWrappers.add(new DonutWrapper("Yeast Plain", "Plain", R.drawable.plain, "Yeast Donut"));
         donutWrappers.add(new DonutWrapper("Yeast Blueberry","Blueberry", R.drawable.blueberry, "Yeast Donut"));
-        donutWrappers.add(new DonutWrapper("Yeast Boston Creme", "Bostone Creme", R.drawable.boston, "Yeast Donut"));
+        donutWrappers.add(new DonutWrapper("Yeast Boston Creme", "Boston Creme", R.drawable.boston, "Yeast Donut"));
         donutWrappers.add(new DonutWrapper("Yeast Chocolate", "Chocolate", R.drawable.chocolate, "Yeast Donut"));
-        donutWrappers.add(new DonutWrapper("Cake Chocolate Icing", "Chocoloate Icing", R.drawable.chocolatefrosting, "Cake Donut"));
+        donutWrappers.add(new DonutWrapper("Cake Chocolate Icing", "Chocolate Icing", R.drawable.chocolatefrosting, "Cake Donut"));
         donutWrappers.add(new DonutWrapper("Cake Vanilla Icing","Vanilla Icing" , R.drawable.vanillafrosting, "Cake Donut"));
         donutWrappers.add(new DonutWrapper("Cake Strawberry Icing", "Strawberry Icing", R.drawable.strawberryfrosting, "Cake Donut"));
         donutWrappers.add(new DonutWrapper("Cake Glazed", "Glazed", R.drawable.glazed, "Cake Donut"));
