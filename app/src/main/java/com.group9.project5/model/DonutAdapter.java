@@ -39,6 +39,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
     @Override
     public void onBindViewHolder(final DonutHolder holder, final int position) {
         holder.imageView.setImageResource(donutWrappers.get(position).getImage());
+        holder.donutWrapper = donutWrappers.get(position);
         holder.priceView.setText(donutWrappers.get(position).getPrice());
         holder.donutView.setText(donutWrappers.get(position).getFlavor());
 
@@ -51,6 +52,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
 
     public class DonutHolder extends RecyclerView.ViewHolder{
         protected TextView donutView, priceView;
+        DonutWrapper donutWrapper;
         protected ImageView imageView;
         protected Button btn_add;
         protected RelativeLayout parentLayout; //this is the row layout
@@ -94,7 +96,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(itemView.getContext(),
                                     donutView.getText().toString() + " added.", Toast.LENGTH_LONG).show();
-//                            Order.getCurrentOrder().add(new Donut(donutView.getText(), ));
+                            Order.getCurrentOrder().add(new Donut(donutWrapper.getFlavor(),donutWrapper.getType(),1 ));
                         }
                         //handle the "NO" click
                     }).setNegativeButton("no", new DialogInterface.OnClickListener() {
