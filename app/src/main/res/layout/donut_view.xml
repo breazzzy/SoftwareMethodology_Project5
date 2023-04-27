@@ -31,7 +31,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/donutRCV"
             android:layout_width="match_parent"
-            android:layout_height="380dp" />
+            android:layout_height="297dp" />
 
         <TextView
             android:id="@+id/textView"
