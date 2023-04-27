@@ -45,9 +45,9 @@ public class DonutActivity extends AppCompatActivity {
         donutWrappers.add(new DonutWrapper("Cake Strawberry Icing", R.drawable.strawberryfrosting, "Cake Donut"));
         donutWrappers.add(new DonutWrapper("Cake Glazed", R.drawable.glazed, "Cake Donut"));
         donutWrappers.add(new DonutWrapper("Cake Cruller", R.drawable.cruller, "Cake Donut"));
-        donutWrappers.add(new DonutWrapper("Powdered Donut Hole", R.drawable.powedered, "Donut Hole"));
-        donutWrappers.add(new DonutWrapper("Jelly Donut Hole", R.drawable.jelly, "Donut Hole"));
-        donutWrappers.add(new DonutWrapper("Lemon Donut Hole", R.drawable.lemon, "Donut Hole"));
+        donutWrappers.add(new DonutWrapper("Powdered Donut Hole", R.drawable.powederedhole, "Donut Hole"));
+        donutWrappers.add(new DonutWrapper("Jelly Donut Hole", R.drawable.jellydonutholes, "Donut Hole"));
+        donutWrappers.add(new DonutWrapper("Lemon Donut Hole", R.drawable.lemonhole, "Donut Hole"));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new DonutAdapter(this, donutWrappers));
