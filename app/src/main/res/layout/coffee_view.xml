@@ -10,10 +10,19 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coffeemenu"
+            android:gravity="center"
+            android:textSize="70px"
+            android:layout_marginTop="20px"/>
+
         <ImageView
             android:id="@+id/coffeeImage"
             android:layout_width="match_parent"
-            android:layout_height="345dp"
+            android:layout_height="279dp"
             app:srcCompat="@drawable/coffee2" />
 
         <LinearLayout
@@ -80,7 +89,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30px"
             android:text="@string/subtotal" />
 
         <TextView
