@@ -15,5 +15,5 @@ public class DonutWrapper {
 
     public int getImage(){return image;}
 
-    public String getPrice(){return "";}
+    public String getPrice(){return new Donut(flavor,type,1).itemPrice() + "";}
 }
