@@ -30,7 +30,13 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/donutRCV"
             android:layout_width="match_parent"
-            android:layout_height="347dp" />
+            android:layout_height="224dp" />
+
+        <Spinner
+            android:id="@+id/donutquantity"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

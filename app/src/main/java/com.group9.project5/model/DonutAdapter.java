@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,14 +53,14 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
         protected TextView donutView, priceView;
         protected ImageView imageView;
         protected Button btn_add;
-        protected ConstraintLayout parentLayout; //this is the row layout
+        protected RelativeLayout parentLayout; //this is the row layout
 
         public DonutHolder(View itemView) {
             super(itemView);
             donutView = (TextView) itemView.findViewById(R.id.donutFlavor);
             priceView = (TextView) itemView.findViewById(R.id.donutPrice);
             imageView = (ImageView) itemView.findViewById(R.id.donutImage);
-            btn_add = itemView.findViewById(R.id.btn_add);
+            btn_add = itemView.findViewById(R.id.addbtn);
             setAddButtonOnClick(itemView); //register the onClicklistener for the button on each row.
 
             /* set onClickListener for the row layout,
@@ -81,8 +82,8 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
          * @param itemView
          */
         private void setAddButtonOnClick(@NonNull View itemView) {
-            Log.d("Button add", itemView.findViewById(R.id.btn_add).toString());
-            itemView.findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
+            Log.d("Button add", itemView.findViewById(R.id.addbtn).toString());
+            itemView.findViewById(R.id.addbtn).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     AlertDialog.Builder alert = new AlertDialog.Builder(itemView.getContext());
