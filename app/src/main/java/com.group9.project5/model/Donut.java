@@ -57,6 +57,6 @@ public class Donut extends MenuItem{
      */
     @Override
     public String toString() {
-        return this.flavor +" "+this.type+"\tx"+this.quantity;
+        return this.flavor +" "+this.type+"(s)\tx"+this.quantity;
     }
 }

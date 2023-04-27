@@ -41,7 +41,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
         holder.imageView.setImageResource(donutWrappers.get(position).getImage());
         holder.donutWrapper = donutWrappers.get(position);
         holder.priceView.setText(donutWrappers.get(position).getPrice());
-        holder.donutView.setText(donutWrappers.get(position).getFlavor());
+        holder.donutView.setText(donutWrappers.get(position).getText());
 
     }
 
@@ -77,7 +77,6 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
                 }
             });*/
         }
-
         /**
          * Set the onClickListener for the button on each row.
          * Clicking on the button will create an AlertDialog with the options of YES/NO.
