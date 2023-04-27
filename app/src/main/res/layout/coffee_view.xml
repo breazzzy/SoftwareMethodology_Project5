@@ -36,21 +36,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sweet Cream" />
+                android:text="@string/coffee_sweetcream" />
 
             <CheckBox
                 android:id="@+id/frenchvanilla"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="French Vanilla" />
+                android:text="@string/coffee_frenchvanilla" />
 
             <CheckBox
                 android:id="@+id/irishcream"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Irish Cream" />
+                android:text="@string/coffee_irishcream" />
 
         </LinearLayout>
 
@@ -64,14 +64,14 @@
                 android:id="@+id/caramel"
                 android:layout_width="132dp"
                 android:layout_height="wrap_content"
-                android:text="Caramel" />
+                android:text="@string/coffee_caramel" />
 
             <CheckBox
                 android:id="@+id/mocha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Mocha" />
+                android:text="@string/coffee_mocha" />
 
         </LinearLayout>
 
