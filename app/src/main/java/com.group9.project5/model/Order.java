@@ -1,4 +1,8 @@
 package com.group9.project5.model;
+import android.util.Log;
+
+import androidx.annotation.NonNull;
+
 import java.util.*;
 
 /**
@@ -9,13 +13,14 @@ public class Order {
     /**
      * Variable for Order number
      */
-    private int orderNumber = 1;
+    private int orderNumber;
     /**
      * ArrayList menu items.
      */
     private ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
 
     private static Order CURRENT_ORDER = new Order();
+    private static int CURRENT_ORDER_NUM = 0;
 
     public static ArrayList<Order> FINALIZED_ORDERS = new ArrayList<>();
 
@@ -23,8 +28,8 @@ public class Order {
      * Order constructor assigns an order number to an order.
      */
     private Order(){
-        this.orderNumber = orderNumber;
-        orderNumber += 1;
+        CURRENT_ORDER_NUM += 1;
+        this.orderNumber = CURRENT_ORDER_NUM;
     }
 
     public static Order getCurrentOrder(){
@@ -37,6 +42,7 @@ public class Order {
 
     public void FinalizeOrder(){
         FINALIZED_ORDERS.add(CURRENT_ORDER);
+        Log.d("Order#" , CURRENT_ORDER_NUM + "");
         createNewOrder();
     }
 
@@ -93,5 +99,11 @@ public class Order {
      */
     public ArrayList<MenuItem> getMenuItems() {
         return menuItems;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Order# " + this.getOrderNumber() + " \t $" + this.getTotal();
     }
 }
