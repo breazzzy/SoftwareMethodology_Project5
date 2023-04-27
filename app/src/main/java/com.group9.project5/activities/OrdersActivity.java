@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -76,12 +77,15 @@ public class OrdersActivity extends AppCompatActivity {
 
             orderText.setText(Order.FINALIZED_ORDERS.get(position).toString());
 
+            View finalConvertView = convertView;
             removeBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Log.d("Order#", (position+1) +" ");
-                    Order.FINALIZED_ORDERS.removeIf(order -> order.getOrderNumber()==position+1);
+                    int orderNum = Order.FINALIZED_ORDERS.get(position).getOrderNumber();
+                    Order.FINALIZED_ORDERS.remove(Order.FINALIZED_ORDERS.get(position));
                     notifyDataSetChanged();
+                    Toast.makeText(finalConvertView.getContext(),"Removed Order# " + orderNum,Toast.LENGTH_SHORT);
                 }
             });
 
