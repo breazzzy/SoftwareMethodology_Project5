@@ -42,22 +42,22 @@
         android:layout_below="@id/donutPrice"
         android:text="+" />
 
-    <TextView
-        android:id="@+id/quantitylabel"
-        android:layout_width="99dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/donutPrice"
-        android:layout_toEndOf="@id/addBtn"
-        android:text="@string/quantity"
-        android:gravity="center"/>
+<!--    <TextView-->
+<!--        android:id="@+id/quantitylabel"-->
+<!--        android:layout_width="99dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/donutPrice"-->
+<!--        android:layout_toEndOf="@id/addBtn"-->
+<!--        android:text="@string/quantity"-->
+<!--        android:gravity="center"/>-->
 
-    <EditText
-        android:id="@+id/donutQ"
-        android:layout_width="125dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/quantitylabel"
-        android:layout_toEndOf="@id/addBtn"
-        android:inputType="number"/>
+<!--    <EditText-->
+<!--        android:id="@+id/donutQ"-->
+<!--        android:layout_width="125dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/quantitylabel"-->
+<!--        android:layout_toEndOf="@id/addBtn"-->
+<!--        android:inputType="number"/>-->
 
 
 </RelativeLayout>

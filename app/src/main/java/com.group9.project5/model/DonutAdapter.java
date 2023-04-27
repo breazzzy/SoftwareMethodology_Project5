@@ -7,10 +7,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,9 +27,11 @@ import java.util.ArrayList;
 public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder> {
     Context context;
     ArrayList<DonutWrapper> donutWrappers;
-    public DonutAdapter(Context context, ArrayList<DonutWrapper> donutWrappers) {
+    Spinner quantity;
+    public DonutAdapter(Context context, ArrayList<DonutWrapper> donutWrappers, Spinner quantity) {
         this.context = context;
         this.donutWrappers = donutWrappers;
+        this.quantity = quantity;
     }
 
 
@@ -52,7 +56,6 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
 
     public class DonutHolder extends RecyclerView.ViewHolder{
         protected TextView donutView, priceView;
-        protected EditText quantityView;
         DonutWrapper donutWrapper;
         protected ImageView imageView;
         protected Button btn_add;
@@ -64,7 +67,8 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
             donutView = (TextView) itemView.findViewById(R.id.donutFlavor);
             priceView = (TextView) itemView.findViewById(R.id.donutPrice);
             imageView = (ImageView) itemView.findViewById(R.id.donutImage);
-            quantityView = (EditText) itemView.findViewById(R.id.donutQ);
+
+
             btn_add = itemView.findViewById(R.id.addBtn);
             setAddButtonOnClick(itemView); //register the onClicklistener for the button on each row.
 
@@ -98,7 +102,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(itemView.getContext(),
                                     donutView.getText().toString() + " added.", Toast.LENGTH_LONG).show();
-                            Order.getCurrentOrder().add(new Donut(donutWrapper.getFlavor(),donutWrapper.getType(),Integer.parseInt(quantityView.getText().toString())));
+                            Order.getCurrentOrder().add(new Donut(donutWrapper.getFlavor(),donutWrapper.getType(),Integer.parseInt(quantity.getSelectedItem().toString())));
                         }
                         //handle the "NO" click
                     }).setNegativeButton("no", new DialogInterface.OnClickListener() {
