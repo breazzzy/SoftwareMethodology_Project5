@@ -18,6 +18,13 @@
     <string name="coffee_frenchvanilla">French Vanilla</string>
     <string name="coffee_mocha">Mocha</string>
     <string name="coffee_caramel">Caramel</string>
+    <string name="coffee_added">Coffee has been added to the basket!</string>
+    <string-array name="sizeArray">
+        <item>Short</item>
+        <item>Tall</item>
+        <item>Grande</item>
+        <item>Venti</item>
+    </string-array>
 
     <string name="donutWrappers">Donuts</string>
     <string-array name="flavorNames">
