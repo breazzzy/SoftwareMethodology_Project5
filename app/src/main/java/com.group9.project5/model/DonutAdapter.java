@@ -60,7 +60,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
             donutView = (TextView) itemView.findViewById(R.id.donutFlavor);
             priceView = (TextView) itemView.findViewById(R.id.donutPrice);
             imageView = (ImageView) itemView.findViewById(R.id.donutImage);
-            btn_add = itemView.findViewById(R.id.addbtn);
+            btn_add = itemView.findViewById(R.id.addBtn);
             setAddButtonOnClick(itemView); //register the onClicklistener for the button on each row.
 
             /* set onClickListener for the row layout,
@@ -82,8 +82,8 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
          * @param itemView
          */
         private void setAddButtonOnClick(@NonNull View itemView) {
-            Log.d("Button add", itemView.findViewById(R.id.addbtn).toString());
-            itemView.findViewById(R.id.addbtn).setOnClickListener(new View.OnClickListener() {
+            Log.d("Button add", itemView.findViewById(R.id.addBtn).toString());
+            itemView.findViewById(R.id.addBtn).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     AlertDialog.Builder alert = new AlertDialog.Builder(itemView.getContext());

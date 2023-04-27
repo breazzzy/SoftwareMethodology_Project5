@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:text="@string/donutmenu"
             android:textAlignment="center"
-            android:textSize="70px"/>
+            android:textSize="70px"
+            android:textColor="@color/black"/>
 
         <ImageView
             android:id="@+id/donutImage"
@@ -30,8 +31,13 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/donutRCV"
             android:layout_width="match_parent"
-            android:layout_height="224dp" />
+            android:layout_height="312dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textColor="@color/black"/>
         <Spinner
             android:id="@+id/donutquantity"
             android:layout_width="95dp"

@@ -19,7 +19,8 @@
             android:layout_marginBottom="300px"
             android:gravity="top"
             android:text="@string/basket"
-            android:textSize="70px" />
+            android:textSize="70px"
+            android:textColor="@color/black"/>
 
         <ListView
             android:id="@+id/ordersListView"
@@ -38,14 +39,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/subtotal" />
+                android:text="@string/subtotal"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/txtSubTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -59,14 +62,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/tax" />
+                android:text="@string/tax"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/txtTax"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -80,14 +85,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/total" />
+                android:text="@string/total"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/txtTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <Button

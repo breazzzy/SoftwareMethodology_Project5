@@ -32,10 +32,11 @@
         android:layout_marginStart="10dp"
         android:textSize="16sp"
         android:layout_below="@id/donutFlavor"
-        android:layout_toEndOf="@id/donutImage"/>
+        android:layout_toEndOf="@id/donutImage"
+        android:textColor="@color/black"/>
 
     <Button
-        android:id="@+id/plusBTN"
+        android:id="@+id/addBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/donutPrice"
@@ -44,7 +45,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_below="@+id/plusBTN"/>
+        android:layout_below="@+id/addBtn"/>
 
 
 </RelativeLayout>
