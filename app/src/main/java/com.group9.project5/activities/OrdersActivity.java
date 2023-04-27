@@ -85,7 +85,8 @@ public class OrdersActivity extends AppCompatActivity {
                     int orderNum = Order.FINALIZED_ORDERS.get(position).getOrderNumber();
                     Order.FINALIZED_ORDERS.remove(Order.FINALIZED_ORDERS.get(position));
                     notifyDataSetChanged();
-                    Toast.makeText(finalConvertView.getContext(),"Removed Order# " + orderNum,Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(finalConvertView.getContext(),"Removed Order# " + orderNum,Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             });
 

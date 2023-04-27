@@ -56,19 +56,19 @@ public class CoffeeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ArrayList<String> addons = new ArrayList<String>();
-                if(sweetcream.isActivated()){
+                if(sweetcream.isChecked()){
                     addons.add("Sweet Cream");
                 }
-                if(irishcream.isActivated()){
+                if(irishcream.isChecked()){
                     addons.add("Irish Cream");
                 }
-                if(frenchvanilla.isActivated()){
+                if(frenchvanilla.isChecked()){
                     addons.add("French Vanilla");
                 }
-                if(caramel.isActivated()){
+                if(caramel.isChecked()){
                     addons.add("Caramel");
                 }
-                if(mocha.isActivated()){
+                if(mocha.isChecked()){
                     addons.add("Mocha");
                 }
                 Coffee coffee = new Coffee(
