@@ -36,15 +36,15 @@ public class DonutActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.donutRCV);
 
         ArrayList<DonutWrapper> donutWrappers = new ArrayList<DonutWrapper>();
-        donutWrappers.add(new DonutWrapper("Yeast Plain", R.drawable.plain, "Yeast"));
-        donutWrappers.add(new DonutWrapper("Yeast Blueberry", R.drawable.blueberry, "Yeast"));
-        donutWrappers.add(new DonutWrapper("Yeast Boston Creme", R.drawable.boston, "Yeast"));
-        donutWrappers.add(new DonutWrapper("Yeast Chocolate", R.drawable.chocolate, "Yeast"));
-        donutWrappers.add(new DonutWrapper("Cake Chocolate Icing", R.drawable.chocolatefrosting, "Cake"));
-        donutWrappers.add(new DonutWrapper("Cake Vanilla Icing", R.drawable.vanillafrosting, "Cake"));
-        donutWrappers.add(new DonutWrapper("Cake Strawberry Icing", R.drawable.strawberryfrosting, "Cake"));
-        donutWrappers.add(new DonutWrapper("Cake Glazed", R.drawable.glazed, "Cake"));
-        donutWrappers.add(new DonutWrapper("Cake Cruller", R.drawable.cruller, "Cake"));
+        donutWrappers.add(new DonutWrapper("Yeast Plain", R.drawable.plain, "Yeast Donut"));
+        donutWrappers.add(new DonutWrapper("Yeast Blueberry", R.drawable.blueberry, "Yeast Donut"));
+        donutWrappers.add(new DonutWrapper("Yeast Boston Creme", R.drawable.boston, "Yeast Donut"));
+        donutWrappers.add(new DonutWrapper("Yeast Chocolate", R.drawable.chocolate, "Yeast Donut"));
+        donutWrappers.add(new DonutWrapper("Cake Chocolate Icing", R.drawable.chocolatefrosting, "Cake Donut"));
+        donutWrappers.add(new DonutWrapper("Cake Vanilla Icing", R.drawable.vanillafrosting, "Cake Donut"));
+        donutWrappers.add(new DonutWrapper("Cake Strawberry Icing", R.drawable.strawberryfrosting, "Cake Donut"));
+        donutWrappers.add(new DonutWrapper("Cake Glazed", R.drawable.glazed, "Cake Donut"));
+        donutWrappers.add(new DonutWrapper("Cake Cruller", R.drawable.cruller, "Cake Donut"));
         donutWrappers.add(new DonutWrapper("Powdered Donut Hole", R.drawable.powedered, "Donut Hole"));
         donutWrappers.add(new DonutWrapper("Jelly Donut Hole", R.drawable.jelly, "Donut Hole"));
         donutWrappers.add(new DonutWrapper("Lemon Donut Hole", R.drawable.lemon, "Donut Hole"));
