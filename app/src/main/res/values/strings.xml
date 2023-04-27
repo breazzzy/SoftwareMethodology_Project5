@@ -7,6 +7,7 @@
     <string name="basket">Your Order</string>
     <string name="tax">Sales Tax:</string>
     <string name="total">Total:</string>
+    <string name="coffeemenu">Coffee Menu</string>
 
     <string name="donuts">Donuts</string>
     <string-array name="flavorNames">

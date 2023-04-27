@@ -17,8 +17,8 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            android:layout_marginBottom="38dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/rucafe"
             android:textSize="90px"/>
 
@@ -26,7 +26,7 @@
             android:id="@+id/IBdonut"
             android:layout_width="121dp"
             android:layout_height="113dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="Donut"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/donut"
@@ -36,7 +36,7 @@
             android:id="@+id/IBcoffee"
             android:layout_width="131dp"
             android:layout_height="103dp"
-            android:layout_marginBottom="33dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="Coffee"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/coffee"
@@ -46,7 +46,7 @@
             android:id="@+id/IBbasket"
             android:layout_width="130dp"
             android:layout_height="128dp"
-            android:layout_marginBottom="47dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="Shopping Cart"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/shopping" />
