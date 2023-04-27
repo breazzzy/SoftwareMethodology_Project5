@@ -49,8 +49,16 @@ public class DonutActivity extends AppCompatActivity {
         donutWrappers.add(new DonutWrapper("Jelly Donut Hole","Jelly", R.drawable.jellydonutholes, "Donut Hole"));
         donutWrappers.add(new DonutWrapper("Lemon Donut Hole","Lemon", R.drawable.lemonhole, "Donut Hole"));
 
+        donutQuantity = findViewById(R.id.quantitySpinner);
+        Integer [] quantityArray = new Integer[]{1,2,3,4};
+
+        ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this,
+                android.R.layout.simple_spinner_item, quantityArray);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        donutQuantity.setAdapter(adapter);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new DonutAdapter(this, donutWrappers));
+        recyclerView.setAdapter(new DonutAdapter(this, donutWrappers,donutQuantity));
     }
 
    /* private void setupDonuts(){
