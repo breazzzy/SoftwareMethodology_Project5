@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -42,7 +43,6 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
         holder.donutWrapper = donutWrappers.get(position);
         holder.priceView.setText(donutWrappers.get(position).getPrice());
         holder.donutView.setText(donutWrappers.get(position).getText());
-
     }
 
     @Override
@@ -52,16 +52,19 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
 
     public class DonutHolder extends RecyclerView.ViewHolder{
         protected TextView donutView, priceView;
+        protected EditText quantityView;
         DonutWrapper donutWrapper;
         protected ImageView imageView;
         protected Button btn_add;
         protected RelativeLayout parentLayout; //this is the row layout
+
 
         public DonutHolder(View itemView) {
             super(itemView);
             donutView = (TextView) itemView.findViewById(R.id.donutFlavor);
             priceView = (TextView) itemView.findViewById(R.id.donutPrice);
             imageView = (ImageView) itemView.findViewById(R.id.donutImage);
+            quantityView = (EditText) itemView.findViewById(R.id.donutQ);
             btn_add = itemView.findViewById(R.id.addBtn);
             setAddButtonOnClick(itemView); //register the onClicklistener for the button on each row.
 
@@ -95,7 +98,7 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(itemView.getContext(),
                                     donutView.getText().toString() + " added.", Toast.LENGTH_LONG).show();
-                            Order.getCurrentOrder().add(new Donut(donutWrapper.getFlavor(),donutWrapper.getType(),1 ));
+                            Order.getCurrentOrder().add(new Donut(donutWrapper.getFlavor(),donutWrapper.getType(),Integer.parseInt(quantityView.getText().toString())));
                         }
                         //handle the "NO" click
                     }).setNegativeButton("no", new DialogInterface.OnClickListener() {

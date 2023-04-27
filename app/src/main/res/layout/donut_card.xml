@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="105dp"
+    android:layout_height="135dp"
     android:id="@+id/rowLayout">
 
 
@@ -42,10 +42,22 @@
         android:layout_below="@id/donutPrice"
         android:text="+" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_below="@+id/addBtn"/>
+    <TextView
+        android:id="@+id/quantitylabel"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donutPrice"
+        android:layout_toEndOf="@id/addBtn"
+        android:text="@string/quantity"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/donutQ"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantitylabel"
+        android:layout_toEndOf="@id/addBtn"
+        android:inputType="number"/>
 
 
 </RelativeLayout>
