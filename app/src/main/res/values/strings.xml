@@ -10,6 +10,8 @@
     <string name="coffeemenu">Coffee Menu</string>
     <string name="empty_basket_error_title">Basket is empty!</string>
     <string name="item_view_removal">Remove</string>
+    <string name="toast_item_removed_basket">Item removed from basket.</string>
+    <string name="toast_order_removed">Order removed.</string>
 
     <string name="donutWrappers">Donuts</string>
     <string-array name="flavorNames">

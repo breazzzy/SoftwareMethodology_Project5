@@ -132,7 +132,7 @@ public class BasketActivity extends AppCompatActivity {
                     Order.getCurrentOrder().remove(Order.getCurrentOrder().getMenuItems().get(position));
                     notifyDataSetChanged();
                     ((BasketActivity) context).loadTotals();
-                    Toast toast = Toast.makeText(context,"Item removed", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(context,R.string.toast_item_removed_basket, Toast.LENGTH_SHORT);
                     toast.show();
                 }
             });
