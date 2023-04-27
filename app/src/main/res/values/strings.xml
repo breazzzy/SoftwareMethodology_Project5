@@ -8,6 +8,8 @@
     <string name="tax">Sales Tax:</string>
     <string name="total">Total:</string>
     <string name="coffeemenu">Coffee Menu</string>
+    <string name="empty_basket_error_title">Basket is empty!</string>
+    <string name="item_view_removal">Remove</string>
 
     <string name="donuts">Donuts</string>
     <string-array name="flavorNames">

@@ -58,7 +58,9 @@ public class BasketActivity extends AppCompatActivity {
                 if(basket.getCount() == 0){
                     //Order is empty
                     AlertDialog alert = builder.create();
-//                    alert.setTitle(R.string.empty_basket_error_title);
+                    alert.setTitle(R.string.empty_basket_error_title);
+                    alert.show();
+                    return;
                 }
                 Order.getCurrentOrder().FinalizeOrder();
                 basket.notifyDataSetChanged();

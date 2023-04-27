@@ -18,6 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|end"
         android:gravity="right|end"
-        android:text="Remove" />
+        android:text="@string/item_view_removal" />
 
 </LinearLayout>
